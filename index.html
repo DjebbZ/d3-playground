@@ -44,10 +44,6 @@
                     .attr("height", viz.height)
                     .attr("transform", "translate(" + viz.margin + "," + viz.margin + ")")
 
-    var scale = d3.scale.linear()
-                    .domain([0, d3.sum(data, function(d) { return d.value })])
-                    .range([0, 2 * Math.PI])
-
     // "background" donut
     var fullArc = d3.svg.arc()
                     .innerRadius(donut.innerRadius)
