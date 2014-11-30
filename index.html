@@ -81,6 +81,10 @@
             .attr("d", arc)
             .attr("fill", "lightcoral")
 
+        group.append("text")
+            .attr("text-anchor", "middle")
+            .text(datum.data.label + ": " + datum.data.value)
+
 
     })
 
